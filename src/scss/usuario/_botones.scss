@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.boton-amarillo {
+    @include m.boton (v.$amarillo, inline-block);
+}
+
+.boton-amarillo-block {
+    @include m.boton (v.$amarillo, block);
+    width: auto;
+}
+.boton-amarillo-bl {
+    @include m.boton (v.$amarillo, block);
+
+}
+.boton-azul-block {
+    @include m.boton (v.$azulF, block);
+    width: auto;
+}
+.boton-azul-bl {
+    @include m.boton (v.$azulF, block);
+
+}
+
+.boton-verde {
+    @include m.boton(v.$verde, inline-block);
+}
+.boton-rojo-block{
+    @include m.boton(v.$rojo, block);
+    width: 50%;
+    color: v.$blanco !important;
+}
+.boton-verde-block {
+    @include m.boton (v.$verde, block);
+}
+
+.dark-mode-boton{
+        width: 3rem;
+        margin-top: 3rem;
+        margin-bottom:2rem;
+        filter: invert(100%);
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include m.tablet {
+            margin-top: 2rem;
+        }
+
+    }

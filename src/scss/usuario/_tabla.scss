@@ -1,0 +1,86 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+table.propiedades {
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+
+    thead {
+        background-color: v.$moradoAlto;
+        th {
+            color: v.$blanco;
+            padding: 2rem;
+        }
+
+    }
+        td {
+            background-color: v.$morado;
+            color: v.$negro;
+            padding: .5rem;
+            font-weight: v.$bold;
+        }
+}
+
+.tabla-container {
+    //border-bottom: v.$negro;
+    border-radius: 1rem;
+    background-color: v.$morado;
+    color: v.$blanco;
+    display: block;
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 80%;
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    max-height: 80%; /* Altura máxima del contenedor antes de que aparezca la barra de desplazamiento vertical */
+
+    label,input{
+        color: v.$negro;
+        padding-right: 2rem;
+    }
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd; /* Borde alrededor de la tabla */
+}
+
+.table th, .table td {
+    padding: 1px;
+    text-align: left;
+    border: 1px solid #ddd; /* Borde alrededor de las celdas */
+}
+
+/* Estilo para los botones de paginación de DataTables */
+.dataTables_paginate .paginate_button {
+    font-weight: v.$bold !important;
+    color: #ffffff !important; /* Color del texto de los botones de paginación */
+    background-color: v.$blanco !important; /* Color de fondo de los botones de paginación */
+    border: 3px solid #ccc !important; /* Borde de los botones de paginación */
+    border-radius: 1rem !important;
+    cursor: pointer !important;
+}
+    /* Estilo para el cuadro de búsqueda */
+ .dataTables_filter input {
+    font-weight: v.$bold !important;
+    margin-bottom: 2rem;
+}
+/* Estilo para el label asociado al cuadro de búsqueda */
+.dataTables_filter label {
+    font-weight: v.$bold !important;
+    margin-bottom: 2rem;
+}
+/* Estilo para el texto de la información de DataTables (ejemplo: "Showing 1 to 10 of 20 entries") */
+.dataTables_info {
+    font-weight: v.$bold !important;
+    color: v.$negro !important;
+    padding-left: 2rem;
+}
+
+
+
+
+
+

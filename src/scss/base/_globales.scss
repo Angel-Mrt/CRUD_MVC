@@ -1,0 +1,31 @@
+@use 'variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem;
+    min-height: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: v.$gris;
+    color: v.$negro;
+    //margin: 5rem;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
